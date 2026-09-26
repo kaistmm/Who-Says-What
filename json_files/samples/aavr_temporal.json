@@ -1,0 +1,232 @@
+[
+ {
+  "video": "samples/cma_four/videos/v11_n02_base.mp4",
+  "audio": "samples/cma_four/audios/v11_n02_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Germany is said by the panda, Egypt is said by the rabbit, Japan is said by the monkey, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "tiger"
+   }
+  ],
+  "label": "tiger",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v11_n02_t2.mp4",
+  "base_ans": "tiger",
+  "exp_ans": "tiger",
+  "causal_ans": "monkey",
+  "target_animal": "canada"
+ },
+ {
+  "video": "samples/cma_four/videos/v11_n02_base.mp4",
+  "audio": "samples/cma_four/audios/v11_n02_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Germany is said by the panda, Egypt is said by the rabbit, Japan is said by the monkey, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "tiger"
+   }
+  ],
+  "label": "tiger",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v11_n02_t3.mp4",
+  "base_ans": "tiger",
+  "exp_ans": "tiger",
+  "causal_ans": "panda",
+  "target_animal": "canada"
+ },
+ {
+  "video": "samples/cma_four/videos/v11_n02_base.mp4",
+  "audio": "samples/cma_four/audios/v11_n02_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Germany is said by the panda, Egypt is said by the rabbit, Japan is said by the monkey, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "tiger"
+   }
+  ],
+  "label": "tiger",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v11_n02_t4.mp4",
+  "base_ans": "tiger",
+  "exp_ans": "tiger",
+  "causal_ans": "rabbit",
+  "target_animal": "canada"
+ },
+ {
+  "video": "samples/cma_four/videos/v22_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v22_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Germany is said by the monkey, Egypt is said by the panda, Japan is said by the rabbit, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "tiger"
+   }
+  ],
+  "label": "tiger",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v22_n01_t1.mp4",
+  "base_ans": "tiger",
+  "exp_ans": "tiger",
+  "causal_ans": "panda",
+  "target_animal": "canada"
+ },
+ {
+  "video": "samples/cma_four/videos/v22_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v22_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Germany is said by the monkey, Egypt is said by the panda, Japan is said by the rabbit, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "tiger"
+   }
+  ],
+  "label": "tiger",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v22_n01_t3.mp4",
+  "base_ans": "tiger",
+  "exp_ans": "tiger",
+  "causal_ans": "rabbit",
+  "target_animal": "canada"
+ },
+ {
+  "video": "samples/cma_four/videos/v22_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v22_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Germany is said by the monkey, Egypt is said by the panda, Japan is said by the rabbit, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "tiger"
+   }
+  ],
+  "label": "tiger",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v22_n01_t4.mp4",
+  "base_ans": "tiger",
+  "exp_ans": "tiger",
+  "causal_ans": "monkey",
+  "target_animal": "canada"
+ },
+ {
+  "video": "samples/cma_four/videos/v33_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v33_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Canada is said by the monkey, Japan is said by the tiger, Egypt is said by the panda, and germany is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v33_n01_t1.mp4",
+  "base_ans": "rabbit",
+  "exp_ans": "rabbit",
+  "causal_ans": "monkey",
+  "target_animal": "germany"
+ },
+ {
+  "video": "samples/cma_four/videos/v33_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v33_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Canada is said by the monkey, Japan is said by the tiger, Egypt is said by the panda, and germany is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v33_n01_t2.mp4",
+  "base_ans": "rabbit",
+  "exp_ans": "rabbit",
+  "causal_ans": "tiger",
+  "target_animal": "germany"
+ },
+ {
+  "video": "samples/cma_four/videos/v33_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v33_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Canada is said by the monkey, Japan is said by the tiger, Egypt is said by the panda, and germany is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v33_n01_t4.mp4",
+  "base_ans": "rabbit",
+  "exp_ans": "rabbit",
+  "causal_ans": "panda",
+  "target_animal": "germany"
+ },
+ {
+  "video": "samples/cma_four/videos/v44_n01_base.mp4",
+  "audio": "samples/cma_four/audios/v44_n01_base.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: Egypt is said by the tiger, Japan is said by the monkey, Germany is said by the panda, and canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {},
+  "c2_video": "samples/cma_four/videos/v44_n01_t1.mp4",
+  "base_ans": "rabbit",
+  "exp_ans": "rabbit",
+  "causal_ans": "tiger",
+  "target_animal": "canada"
+ }
+]

@@ -1,0 +1,882 @@
+{
+ "pair_csv": "synthetic_animal_dataset/four_high_entropy/four_high_entropy_combinations.json",
+ "video_dir": "synthetic_animal_dataset/basic_asset/animal/video",
+ "image_dir": "synthetic_animal_dataset/basic_asset/animal/image",
+ "output_dir": "synthetic_animal_dataset/four_high_entropy/video",
+ "variants": [
+  "v00",
+  "v01",
+  "v02",
+  "v03",
+  "v10",
+  "v11",
+  "v12",
+  "v13",
+  "v20",
+  "v21",
+  "v22",
+  "v23",
+  "v30",
+  "v31",
+  "v32",
+  "v33"
+ ],
+ "count_pairs": 10,
+ "count": 10,
+ "gap_seconds": 0.0,
+ "with_audio": true,
+ "start_combo": 1,
+ "end_combo": null,
+ "seed": 42,
+ "country_rule": "4 distinct speech contents per video",
+ "voice_rule": "4 distinct voices per video",
+ "variant_rule": "variant vXY fixes video1 animal position to slot-index X and speech order index Y",
+ "layout_index_map": {
+  "0": "tl",
+  "1": "tr",
+  "2": "bl",
+  "3": "br"
+ },
+ "records": [
+  {
+   "combo_id": 1,
+   "pair_id": 1,
+   "variant": "v00",
+   "variant_description": "v00: video1 animal fixed to layout index 0 (tl) and speech order index 0",
+   "video1": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "layout_animal": {
+    "tl": "rabbit",
+    "tr": "tiger",
+    "bl": "panda",
+    "br": "monkey"
+   },
+   "layout_country": {
+    "tl": "egypt",
+    "tr": "japan",
+    "bl": "germany",
+    "br": "canada"
+   },
+   "layout_voice": {
+    "tl": "woman2",
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2"
+   },
+   "speech_order_animal": [
+    "rabbit",
+    "panda",
+    "monkey",
+    "tiger"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "germany",
+    "canada",
+    "japan"
+   ],
+   "speech_order_voice": [
+    "woman2",
+    "man1",
+    "man2",
+    "woman1"
+   ],
+   "output_name": "combo_0001_v00.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0001_v00.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 51,
+   "pair_id": 51,
+   "variant": "v01",
+   "variant_description": "v01: video1 animal fixed to layout index 0 (tl) and speech order index 1",
+   "video1": {
+    "animal": "rabbit",
+    "country": "canada",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_canada_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video2": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tl": "rabbit",
+    "tr": "tiger",
+    "bl": "monkey",
+    "br": "panda"
+   },
+   "layout_country": {
+    "tl": "canada",
+    "tr": "japan",
+    "bl": "germany",
+    "br": "egypt"
+   },
+   "layout_voice": {
+    "tl": "man1",
+    "tr": "woman1",
+    "bl": "man2",
+    "br": "woman2"
+   },
+   "speech_order_animal": [
+    "panda",
+    "rabbit",
+    "monkey",
+    "tiger"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "germany",
+    "japan"
+   ],
+   "speech_order_voice": [
+    "woman2",
+    "man1",
+    "man2",
+    "woman1"
+   ],
+   "output_name": "combo_0051_v01.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0051_v01.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 101,
+   "pair_id": 101,
+   "variant": "v02",
+   "variant_description": "v02: video1 animal fixed to layout index 0 (tl) and speech order index 2",
+   "video1": {
+    "animal": "monkey",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tl": "monkey",
+    "tr": "panda",
+    "bl": "tiger",
+    "br": "rabbit"
+   },
+   "layout_country": {
+    "tl": "egypt",
+    "tr": "japan",
+    "bl": "canada",
+    "br": "germany"
+   },
+   "layout_voice": {
+    "tl": "man2",
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "woman2"
+   },
+   "speech_order_animal": [
+    "panda",
+    "rabbit",
+    "monkey",
+    "tiger"
+   ],
+   "speech_order_country": [
+    "japan",
+    "germany",
+    "egypt",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man2",
+    "man1"
+   ],
+   "output_name": "combo_0101_v02.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0101_v02.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 251,
+   "pair_id": 251,
+   "variant": "v11",
+   "variant_description": "v11: video1 animal fixed to layout index 1 (tr) and speech order index 1",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "tl": "panda",
+    "bl": "tiger",
+    "br": "rabbit"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "tl": "japan",
+    "bl": "egypt",
+    "br": "germany"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "woman1",
+    "bl": "man1",
+    "br": "man2"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "germany",
+    "japan"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "woman2",
+    "man2",
+    "woman1"
+   ],
+   "output_name": "combo_0251_v11.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0251_v11.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 301,
+   "pair_id": 301,
+   "variant": "v12",
+   "variant_description": "v12: video1 animal fixed to layout index 1 (tr) and speech order index 2",
+   "video1": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "bl": "monkey",
+    "br": "rabbit"
+   },
+   "layout_country": {
+    "tr": "egypt",
+    "tl": "japan",
+    "bl": "canada",
+    "br": "germany"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "bl": "woman1",
+    "br": "man1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "rabbit",
+    "panda",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "japan",
+    "germany",
+    "egypt",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "output_name": "combo_0301_v12.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0301_v12.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 351,
+   "pair_id": 351,
+   "variant": "v13",
+   "variant_description": "v13: video1 animal fixed to layout index 1 (tr) and speech order index 3",
+   "video1": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video2": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "germany",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_germany_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "panda",
+    "country": "canada",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_canada_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "layout_animal": {
+    "tr": "rabbit",
+    "tl": "panda",
+    "bl": "monkey",
+    "br": "tiger"
+   },
+   "layout_country": {
+    "tr": "egypt",
+    "tl": "canada",
+    "bl": "japan",
+    "br": "germany"
+   },
+   "layout_voice": {
+    "tr": "man2",
+    "tl": "man1",
+    "bl": "woman2",
+    "br": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "monkey",
+    "tiger",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "woman2",
+    "woman1",
+    "man2"
+   ],
+   "output_name": "combo_0351_v13.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0351_v13.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 501,
+   "pair_id": 501,
+   "variant": "v22",
+   "variant_description": "v22: video1 animal fixed to layout index 2 (bl) and speech order index 2",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "tl": "tiger",
+    "tr": "panda",
+    "br": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "tl": "canada",
+    "tr": "egypt",
+    "br": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "tl": "man2",
+    "tr": "woman1",
+    "br": "man1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "monkey",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "germany",
+    "japan"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "man2",
+    "woman2",
+    "man1"
+   ],
+   "output_name": "combo_0501_v22.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0501_v22.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 551,
+   "pair_id": 551,
+   "variant": "v23",
+   "variant_description": "v23: video1 animal fixed to layout index 2 (bl) and speech order index 3",
+   "video1": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "canada",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_canada_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "tl": "rabbit",
+    "tr": "panda",
+    "br": "tiger"
+   },
+   "layout_country": {
+    "bl": "japan",
+    "tl": "germany",
+    "tr": "canada",
+    "br": "egypt"
+   },
+   "layout_voice": {
+    "bl": "man1",
+    "tl": "man2",
+    "tr": "woman2",
+    "br": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "rabbit",
+    "tiger",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "canada",
+    "germany",
+    "egypt",
+    "japan"
+   ],
+   "speech_order_voice": [
+    "woman2",
+    "man2",
+    "woman1",
+    "man1"
+   ],
+   "output_name": "combo_0551_v23.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0551_v23.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 601,
+   "pair_id": 601,
+   "variant": "v30",
+   "variant_description": "v30: video1 animal fixed to layout index 3 (br) and speech order index 0",
+   "video1": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "br": "panda",
+    "tl": "monkey",
+    "tr": "tiger",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "br": "egypt",
+    "tl": "japan",
+    "tr": "germany",
+    "bl": "canada"
+   },
+   "layout_voice": {
+    "br": "woman2",
+    "tl": "man2",
+    "tr": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "rabbit",
+    "tiger",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "germany",
+    "japan"
+   ],
+   "speech_order_voice": [
+    "woman2",
+    "woman1",
+    "man1",
+    "man2"
+   ],
+   "output_name": "combo_0601_v30.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0601_v30.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  },
+  {
+   "combo_id": 751,
+   "pair_id": 751,
+   "variant": "v33",
+   "variant_description": "v33: video1 animal fixed to layout index 3 (br) and speech order index 3",
+   "video1": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "br": "panda",
+    "tl": "monkey",
+    "tr": "rabbit",
+    "bl": "tiger"
+   },
+   "layout_country": {
+    "br": "egypt",
+    "tl": "japan",
+    "tr": "canada",
+    "bl": "germany"
+   },
+   "layout_voice": {
+    "br": "man2",
+    "tl": "woman2",
+    "tr": "woman1",
+    "bl": "man1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "rabbit",
+    "monkey",
+    "panda"
+   ],
+   "speech_order_country": [
+    "germany",
+    "canada",
+    "japan",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "woman1",
+    "woman2",
+    "man2"
+   ],
+   "output_name": "combo_0751_v33.mp4",
+   "output_path": "synthetic_animal_dataset/four_high_entropy/video/combo_0751_v33.mp4",
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "audio_note": "Audio can be concatenated in speech_order_animal sequence.",
+   "gap_seconds": 0.0,
+   "skipped_existing": false
+  }
+ ]
+}

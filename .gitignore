@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+checkpoints/
+synthetic_animal_dataset
+exp/
+exp_samples/
+figures/
+figures_samples/
+README (1).md

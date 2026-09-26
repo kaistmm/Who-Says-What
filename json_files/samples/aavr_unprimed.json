@@ -1,0 +1,462 @@
+[
+ {
+  "video": "samples/four_high_entropy/video/combo_0001_v00.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0001_v00.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: egypt is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "target_animal": "egypt",
+  "layout_animal": {
+   "tl": "rabbit",
+   "tr": "tiger",
+   "bl": "panda",
+   "br": "monkey"
+  },
+  "layout_country": {
+   "tl": "egypt",
+   "tr": "japan",
+   "bl": "germany",
+   "br": "canada"
+  },
+  "speech_order_animal": [
+   "rabbit",
+   "panda",
+   "monkey",
+   "tiger"
+  ],
+  "speech_order_country": [
+   "egypt",
+   "germany",
+   "canada",
+   "japan"
+  ],
+  "semantic_id": 2,
+  "position_id": 0,
+  "temporal_id": 0,
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0051_v01.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0051_v01.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "target_animal": "canada",
+  "layout_animal": {
+   "tl": "rabbit",
+   "tr": "tiger",
+   "bl": "monkey",
+   "br": "panda"
+  },
+  "layout_country": {
+   "tl": "canada",
+   "tr": "japan",
+   "bl": "germany",
+   "br": "egypt"
+  },
+  "speech_order_animal": [
+   "panda",
+   "rabbit",
+   "monkey",
+   "tiger"
+  ],
+  "speech_order_country": [
+   "egypt",
+   "canada",
+   "germany",
+   "japan"
+  ],
+  "semantic_id": 2,
+  "position_id": 0,
+  "temporal_id": 1,
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0101_v02.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0101_v02.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: egypt is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "monkey"
+   }
+  ],
+  "target_animal": "egypt",
+  "layout_animal": {
+   "tl": "monkey",
+   "tr": "panda",
+   "bl": "tiger",
+   "br": "rabbit"
+  },
+  "layout_country": {
+   "tl": "egypt",
+   "tr": "japan",
+   "bl": "canada",
+   "br": "germany"
+  },
+  "speech_order_animal": [
+   "panda",
+   "rabbit",
+   "monkey",
+   "tiger"
+  ],
+  "speech_order_country": [
+   "japan",
+   "germany",
+   "egypt",
+   "canada"
+  ],
+  "semantic_id": 0,
+  "position_id": 0,
+  "temporal_id": 2,
+  "label": "monkey",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0251_v11.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0251_v11.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: canada is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "monkey"
+   }
+  ],
+  "target_animal": "canada",
+  "layout_animal": {
+   "tr": "monkey",
+   "tl": "panda",
+   "bl": "tiger",
+   "br": "rabbit"
+  },
+  "layout_country": {
+   "tr": "canada",
+   "tl": "japan",
+   "bl": "egypt",
+   "br": "germany"
+  },
+  "speech_order_animal": [
+   "tiger",
+   "monkey",
+   "rabbit",
+   "panda"
+  ],
+  "speech_order_country": [
+   "egypt",
+   "canada",
+   "germany",
+   "japan"
+  ],
+  "semantic_id": 0,
+  "position_id": 1,
+  "temporal_id": 1,
+  "label": "monkey",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0301_v12.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0301_v12.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: egypt is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "panda"
+   }
+  ],
+  "target_animal": "egypt",
+  "layout_animal": {
+   "tr": "panda",
+   "tl": "tiger",
+   "bl": "monkey",
+   "br": "rabbit"
+  },
+  "layout_country": {
+   "tr": "egypt",
+   "tl": "japan",
+   "bl": "canada",
+   "br": "germany"
+  },
+  "speech_order_animal": [
+   "tiger",
+   "rabbit",
+   "panda",
+   "monkey"
+  ],
+  "speech_order_country": [
+   "japan",
+   "germany",
+   "egypt",
+   "canada"
+  ],
+  "semantic_id": 1,
+  "position_id": 1,
+  "temporal_id": 2,
+  "label": "panda",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0351_v13.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0351_v13.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: egypt is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "rabbit"
+   }
+  ],
+  "target_animal": "egypt",
+  "layout_animal": {
+   "tr": "rabbit",
+   "tl": "panda",
+   "bl": "monkey",
+   "br": "tiger"
+  },
+  "layout_country": {
+   "tr": "egypt",
+   "tl": "canada",
+   "bl": "japan",
+   "br": "germany"
+  },
+  "speech_order_animal": [
+   "panda",
+   "monkey",
+   "tiger",
+   "rabbit"
+  ],
+  "speech_order_country": [
+   "canada",
+   "japan",
+   "germany",
+   "egypt"
+  ],
+  "semantic_id": 2,
+  "position_id": 1,
+  "temporal_id": 3,
+  "label": "rabbit",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0501_v22.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0501_v22.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: germany is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "monkey"
+   }
+  ],
+  "target_animal": "germany",
+  "layout_animal": {
+   "bl": "monkey",
+   "tl": "tiger",
+   "tr": "panda",
+   "br": "rabbit"
+  },
+  "layout_country": {
+   "bl": "germany",
+   "tl": "canada",
+   "tr": "egypt",
+   "br": "japan"
+  },
+  "speech_order_animal": [
+   "panda",
+   "tiger",
+   "monkey",
+   "rabbit"
+  ],
+  "speech_order_country": [
+   "egypt",
+   "canada",
+   "germany",
+   "japan"
+  ],
+  "semantic_id": 0,
+  "position_id": 2,
+  "temporal_id": 2,
+  "label": "monkey",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0551_v23.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0551_v23.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: japan is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "monkey"
+   }
+  ],
+  "target_animal": "japan",
+  "layout_animal": {
+   "bl": "monkey",
+   "tl": "rabbit",
+   "tr": "panda",
+   "br": "tiger"
+  },
+  "layout_country": {
+   "bl": "japan",
+   "tl": "germany",
+   "tr": "canada",
+   "br": "egypt"
+  },
+  "speech_order_animal": [
+   "panda",
+   "rabbit",
+   "tiger",
+   "monkey"
+  ],
+  "speech_order_country": [
+   "canada",
+   "germany",
+   "egypt",
+   "japan"
+  ],
+  "semantic_id": 0,
+  "position_id": 2,
+  "temporal_id": 3,
+  "label": "monkey",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0601_v30.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0601_v30.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: egypt is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "panda"
+   }
+  ],
+  "target_animal": "egypt",
+  "layout_animal": {
+   "br": "panda",
+   "tl": "monkey",
+   "tr": "tiger",
+   "bl": "rabbit"
+  },
+  "layout_country": {
+   "br": "egypt",
+   "tl": "japan",
+   "tr": "germany",
+   "bl": "canada"
+  },
+  "speech_order_animal": [
+   "panda",
+   "rabbit",
+   "tiger",
+   "monkey"
+  ],
+  "speech_order_country": [
+   "egypt",
+   "canada",
+   "germany",
+   "japan"
+  ],
+  "semantic_id": 1,
+  "position_id": 3,
+  "temporal_id": 0,
+  "label": "panda",
+  "label_name": "",
+  "choices": {}
+ },
+ {
+  "video": "samples/four_high_entropy/video/combo_0751_v33.mp4",
+  "audio": "samples/four_high_entropy/audio/combo_0751_v33.wav",
+  "use_audio": true,
+  "conversations": [
+   {
+    "from": "human",
+    "value": "<video>\nThere are four animals in the clip, each speaking one word. Continue the sentence with the single most likely next word. Output exactly one word. Do not add any explanation, extra words, or punctuation. Sentence: egypt is said by the "
+   },
+   {
+    "from": "gpt",
+    "value": "panda"
+   }
+  ],
+  "target_animal": "egypt",
+  "layout_animal": {
+   "br": "panda",
+   "tl": "monkey",
+   "tr": "rabbit",
+   "bl": "tiger"
+  },
+  "layout_country": {
+   "br": "egypt",
+   "tl": "japan",
+   "tr": "canada",
+   "bl": "germany"
+  },
+  "speech_order_animal": [
+   "tiger",
+   "rabbit",
+   "monkey",
+   "panda"
+  ],
+  "speech_order_country": [
+   "germany",
+   "canada",
+   "japan",
+   "egypt"
+  ],
+  "semantic_id": 1,
+  "position_id": 3,
+  "temporal_id": 3,
+  "label": "panda",
+  "label_name": "",
+  "choices": {}
+ }
+]

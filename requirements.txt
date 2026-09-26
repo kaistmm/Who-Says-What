@@ -1,0 +1,22 @@
+# Tested with Python 3.10, CUDA 12.x, one 48 GB GPU (RTX A6000).
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+torchcodec==0.4.0
+transformers==4.51.3
+tokenizers==0.21.0
+safetensors==0.6.2
+accelerate==1.7.0
+peft==0.15.2
+flash-attn==2.7.2.post1      # imported by the model file; analyses themselves run with eager attention
+liger-kernel==0.5.10
+decord==0.6.0
+einops==0.8.1
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.7
+pillow==11.3.0
+opencv-python==4.12.0.88     # dataset rendering only
+soundfile==0.13.1
+tqdm==4.67.1
+# system: ffmpeg (dataset rendering / wav extraction)

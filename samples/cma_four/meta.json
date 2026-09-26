@@ -1,0 +1,3725 @@
+{
+ "video_dir": "synthetic_animal_dataset/basic_asset/animal/video",
+ "image_dir": "synthetic_animal_dataset/basic_asset/animal/image",
+ "output_dir": "synthetic_animal_dataset/cma_four/videos",
+ "base_variants": [
+  "v11",
+  "v12",
+  "v13",
+  "v14",
+  "v21",
+  "v22",
+  "v23",
+  "v24",
+  "v31",
+  "v32",
+  "v33",
+  "v34",
+  "v41",
+  "v42",
+  "v43",
+  "v44"
+ ],
+ "per_variant_count": 20,
+ "total_base": 4,
+ "total_with_variants": 44,
+ "variant_types": [
+  "base",
+  "p1-p4(excl X)",
+  "t1-t4(excl Y)",
+  "an1",
+  "an2",
+  "an3",
+  "cn1",
+  "cn2",
+  "cn3"
+ ],
+ "gap_seconds": 0.0,
+ "with_audio": true,
+ "seed": 42,
+ "animals": [
+  "monkey",
+  "panda",
+  "rabbit",
+  "tiger"
+ ],
+ "countries": [
+  "germany",
+  "japan",
+  "canada",
+  "egypt"
+ ],
+ "voices": [
+  "man1",
+  "man2",
+  "woman1",
+  "woman2"
+ ],
+ "an_replacements": {
+  "an1": "giraffe",
+  "an2": "chicken",
+  "an3": "frog"
+ },
+ "cn_replacements": {
+  "cn1": "russia",
+  "cn2": "china",
+  "cn3": "brazil"
+ },
+ "layout_index_map": {
+  "1": "tl",
+  "2": "tr",
+  "3": "bl",
+  "4": "br"
+ },
+ "variant_rule": "vXY: the animal at position X (1=tl,2=tr,3=bl,4=br) speaks at order Y",
+ "position_swap_rule": "pZ: swap position of target (pos X) with animal at pos Z; speech order unchanged",
+ "time_swap_rule": "tZ: swap speech order of target (order Y) with animal at order Z; positions unchanged",
+ "animal_swap_rule": "anN: replace target animal with giraffe(1)/chicken(2)/frog(3); keep country & voice",
+ "country_swap_rule": "cnN: replace target country with russia(1)/china(2)/brazil(3); keep animal & voice",
+ "records": [
+  {
+   "combo_id": 14,
+   "variant": "v11",
+   "record_type": "base",
+   "output_name": "v11_n02_base.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_base.mp4",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 15,
+   "variant": "v11",
+   "record_type": "position_swap",
+   "output_name": "v11_n02_p2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_p2.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "swap position 1(tl) with position 2(tr)",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tl": "panda",
+    "tr": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tl": "germany",
+    "tr": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tl": "woman2",
+    "tr": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 16,
+   "variant": "v11",
+   "record_type": "position_swap",
+   "output_name": "v11_n02_p3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_p3.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "swap position 1(tl) with position 3(bl)",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "bl": "tiger",
+    "br": "monkey",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "bl": "canada",
+    "br": "japan",
+    "tl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "bl": "man2",
+    "br": "man1",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 17,
+   "variant": "v11",
+   "record_type": "position_swap",
+   "output_name": "v11_n02_p4.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_p4.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "swap position 1(tl) with position 4(br)",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "br": "tiger",
+    "tl": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "br": "canada",
+    "tl": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "br": "man2",
+    "tl": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 18,
+   "variant": "v11",
+   "record_type": "time_swap",
+   "output_name": "v11_n02_t2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_t2.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "swap speech order 1 with speech order 2",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "japan",
+    "canada",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 19,
+   "variant": "v11",
+   "record_type": "time_swap",
+   "output_name": "v11_n02_t3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_t3.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "swap speech order 1 with speech order 3",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "monkey",
+    "tiger",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "germany",
+    "japan",
+    "canada",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman2",
+    "man1",
+    "man2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 20,
+   "variant": "v11",
+   "record_type": "time_swap",
+   "output_name": "v11_n02_t4.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_t4.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "swap speech order 1 with speech order 4",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "rabbit",
+    "monkey",
+    "panda",
+    "tiger"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "japan",
+    "germany",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "man1",
+    "woman2",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 21,
+   "variant": "v11",
+   "record_type": "animal_swap",
+   "output_name": "v11_n02_an1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_an1.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "replace tiger at position 1(tl) with giraffe",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "giraffe",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/giraffe_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/giraffe_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "giraffe",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "giraffe",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 22,
+   "variant": "v11",
+   "record_type": "animal_swap",
+   "output_name": "v11_n02_an2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_an2.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "replace tiger at position 1(tl) with chicken",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "chicken",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/chicken_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/chicken_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "chicken",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "chicken",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 23,
+   "variant": "v11",
+   "record_type": "animal_swap",
+   "output_name": "v11_n02_an3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_an3.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "replace tiger at position 1(tl) with frog",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "frog",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/frog_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/frog_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "frog",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "canada",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "frog",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 24,
+   "variant": "v11",
+   "record_type": "country_swap",
+   "output_name": "v11_n02_cn1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_cn1.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "replace canada at position 1(tl) with russia",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "russia",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_russia_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "russia",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "russia",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 25,
+   "variant": "v11",
+   "record_type": "country_swap",
+   "output_name": "v11_n02_cn2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_cn2.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "replace canada at position 1(tl) with china",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "china",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_china_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "china",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "china",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 26,
+   "variant": "v11",
+   "record_type": "country_swap",
+   "output_name": "v11_n02_cn3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v11_n02_cn3.mp4",
+   "base_variant": "v11_n02_base.mp4",
+   "swap_info": "replace canada at position 1(tl) with brazil",
+   "video1": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video2": {
+    "animal": "tiger",
+    "country": "brazil",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_brazil_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "egypt",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_egypt_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "panda",
+    "tl": "tiger",
+    "br": "monkey",
+    "bl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "tl": "brazil",
+    "br": "japan",
+    "bl": "egypt"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "tl": "man2",
+    "br": "man1",
+    "bl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "brazil",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman2",
+    "woman1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1301,
+   "variant": "v22",
+   "record_type": "base",
+   "output_name": "v22_n01_base.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_base.mp4",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1302,
+   "variant": "v22",
+   "record_type": "position_swap",
+   "output_name": "v22_n01_p1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_p1.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "swap position 2(tr) with position 1(tl)",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tl": "tiger",
+    "tr": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "canada",
+    "tr": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tl": "man2",
+    "tr": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1303,
+   "variant": "v22",
+   "record_type": "position_swap",
+   "output_name": "v22_n01_p3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_p3.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "swap position 2(tr) with position 3(bl)",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "br": "panda",
+    "bl": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "tr": "germany",
+    "br": "egypt",
+    "bl": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman2",
+    "br": "man1",
+    "bl": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1304,
+   "variant": "v22",
+   "record_type": "position_swap",
+   "output_name": "v22_n01_p4.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_p4.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "swap position 2(tr) with position 4(br)",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "tr": "panda",
+    "br": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "tr": "egypt",
+    "br": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "tr": "man1",
+    "br": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1305,
+   "variant": "v22",
+   "record_type": "time_swap",
+   "output_name": "v22_n01_t1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_t1.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "swap speech order 2 with speech order 1",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "panda",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "canada",
+    "egypt",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "man1",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1306,
+   "variant": "v22",
+   "record_type": "time_swap",
+   "output_name": "v22_n01_t3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_t3.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "swap speech order 2 with speech order 3",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "rabbit",
+    "tiger",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "japan",
+    "canada",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "woman1",
+    "man2",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1307,
+   "variant": "v22",
+   "record_type": "time_swap",
+   "output_name": "v22_n01_t4.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_t4.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "swap speech order 2 with speech order 4",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "monkey",
+    "rabbit",
+    "tiger"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "germany",
+    "japan",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "woman2",
+    "woman1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1308,
+   "variant": "v22",
+   "record_type": "animal_swap",
+   "output_name": "v22_n01_an1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_an1.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "replace tiger at position 2(tr) with giraffe",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "giraffe",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/giraffe_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/giraffe_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "giraffe",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "giraffe",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1309,
+   "variant": "v22",
+   "record_type": "animal_swap",
+   "output_name": "v22_n01_an2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_an2.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "replace tiger at position 2(tr) with chicken",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "chicken",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/chicken_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/chicken_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "chicken",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "chicken",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1310,
+   "variant": "v22",
+   "record_type": "animal_swap",
+   "output_name": "v22_n01_an3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_an3.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "replace tiger at position 2(tr) with frog",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "frog",
+    "country": "canada",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/frog_canada_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/frog_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "frog",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "canada",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "frog",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "canada",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1311,
+   "variant": "v22",
+   "record_type": "country_swap",
+   "output_name": "v22_n01_cn1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_cn1.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "replace canada at position 2(tr) with russia",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "russia",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_russia_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "russia",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "russia",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1312,
+   "variant": "v22",
+   "record_type": "country_swap",
+   "output_name": "v22_n01_cn2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_cn2.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "replace canada at position 2(tr) with china",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "china",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_china_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "china",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "china",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 1313,
+   "variant": "v22",
+   "record_type": "country_swap",
+   "output_name": "v22_n01_cn3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v22_n01_cn3.mp4",
+   "base_variant": "v22_n01_base.mp4",
+   "swap_info": "replace canada at position 2(tr) with brazil",
+   "video1": {
+    "animal": "monkey",
+    "country": "germany",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_germany_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video3": {
+    "animal": "tiger",
+    "country": "brazil",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_brazil_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video4": {
+    "animal": "rabbit",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "br": "panda",
+    "tr": "tiger",
+    "tl": "rabbit"
+   },
+   "layout_country": {
+    "bl": "germany",
+    "br": "egypt",
+    "tr": "brazil",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman2",
+    "br": "man1",
+    "tr": "man2",
+    "tl": "woman1"
+   },
+   "speech_order_animal": [
+    "panda",
+    "tiger",
+    "rabbit",
+    "monkey"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "brazil",
+    "japan",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "man2",
+    "woman1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2601,
+   "variant": "v33",
+   "record_type": "base",
+   "output_name": "v33_n01_base.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_base.mp4",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2602,
+   "variant": "v33",
+   "record_type": "position_swap",
+   "output_name": "v33_n01_p1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_p1.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "swap position 3(bl) with position 1(tl)",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "tl": "rabbit",
+    "br": "panda",
+    "bl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "tl": "germany",
+    "br": "egypt",
+    "bl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "tl": "man1",
+    "br": "man2",
+    "bl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2603,
+   "variant": "v33",
+   "record_type": "position_swap",
+   "output_name": "v33_n01_p2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_p2.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "swap position 3(bl) with position 2(tr)",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "bl": "monkey",
+    "tr": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "bl": "canada",
+    "tr": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "bl": "woman1",
+    "tr": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2604,
+   "variant": "v33",
+   "record_type": "position_swap",
+   "output_name": "v33_n01_p4.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_p4.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "swap position 3(bl) with position 4(br)",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "br": "rabbit",
+    "bl": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "br": "germany",
+    "bl": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "br": "man1",
+    "bl": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2605,
+   "variant": "v33",
+   "record_type": "time_swap",
+   "output_name": "v33_n01_t1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_t1.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "swap speech order 3 with speech order 1",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "rabbit",
+    "tiger",
+    "monkey",
+    "panda"
+   ],
+   "speech_order_country": [
+    "germany",
+    "japan",
+    "canada",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "man1",
+    "woman2",
+    "woman1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2606,
+   "variant": "v33",
+   "record_type": "time_swap",
+   "output_name": "v33_n01_t2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_t2.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "swap speech order 3 with speech order 2",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "rabbit",
+    "tiger",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "germany",
+    "japan",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "man1",
+    "woman2",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2607,
+   "variant": "v33",
+   "record_type": "time_swap",
+   "output_name": "v33_n01_t4.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_t4.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "swap speech order 3 with speech order 4",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "egypt",
+    "germany"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man2",
+    "man1"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2608,
+   "variant": "v33",
+   "record_type": "animal_swap",
+   "output_name": "v33_n01_an1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_an1.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "replace rabbit at position 3(bl) with giraffe",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "giraffe",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/giraffe_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/giraffe_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "giraffe",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "giraffe",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2609,
+   "variant": "v33",
+   "record_type": "animal_swap",
+   "output_name": "v33_n01_an2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_an2.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "replace rabbit at position 3(bl) with chicken",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "chicken",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/chicken_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/chicken_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "chicken",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "chicken",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2610,
+   "variant": "v33",
+   "record_type": "animal_swap",
+   "output_name": "v33_n01_an3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_an3.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "replace rabbit at position 3(bl) with frog",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "frog",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/frog_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/frog_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "frog",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "germany",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "frog",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2611,
+   "variant": "v33",
+   "record_type": "country_swap",
+   "output_name": "v33_n01_cn1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_cn1.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "replace germany at position 3(bl) with russia",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "russia",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_russia_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "russia",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "russia",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2612,
+   "variant": "v33",
+   "record_type": "country_swap",
+   "output_name": "v33_n01_cn2.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_cn2.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "replace germany at position 3(bl) with china",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "china",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_china_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "china",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "china",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 2613,
+   "variant": "v33",
+   "record_type": "country_swap",
+   "output_name": "v33_n01_cn3.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v33_n01_cn3.mp4",
+   "base_variant": "v33_n01_base.mp4",
+   "swap_info": "replace germany at position 3(bl) with brazil",
+   "video1": {
+    "animal": "monkey",
+    "country": "canada",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_canada_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "brazil",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_brazil_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "panda",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "video4": {
+    "animal": "tiger",
+    "country": "japan",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_japan_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "layout_animal": {
+    "tr": "monkey",
+    "bl": "rabbit",
+    "br": "panda",
+    "tl": "tiger"
+   },
+   "layout_country": {
+    "tr": "canada",
+    "bl": "brazil",
+    "br": "egypt",
+    "tl": "japan"
+   },
+   "layout_voice": {
+    "tr": "woman1",
+    "bl": "man1",
+    "br": "man2",
+    "tl": "woman2"
+   },
+   "speech_order_animal": [
+    "monkey",
+    "tiger",
+    "rabbit",
+    "panda"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "brazil",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman1",
+    "woman2",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 3901,
+   "variant": "v44",
+   "record_type": "base",
+   "output_name": "v44_n01_base.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v44_n01_base.mp4",
+   "video1": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "canada",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_canada_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "layout_animal": {
+    "bl": "tiger",
+    "br": "rabbit",
+    "tl": "monkey",
+    "tr": "panda"
+   },
+   "layout_country": {
+    "bl": "egypt",
+    "br": "canada",
+    "tl": "japan",
+    "tr": "germany"
+   },
+   "layout_voice": {
+    "bl": "man2",
+    "br": "woman2",
+    "tl": "woman1",
+    "tr": "man1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "japan",
+    "germany",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "woman1",
+    "man1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 3902,
+   "variant": "v44",
+   "record_type": "position_swap",
+   "output_name": "v44_n01_p1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v44_n01_p1.mp4",
+   "base_variant": "v44_n01_base.mp4",
+   "swap_info": "swap position 4(br) with position 1(tl)",
+   "video1": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "canada",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_canada_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "layout_animal": {
+    "bl": "tiger",
+    "tl": "rabbit",
+    "br": "monkey",
+    "tr": "panda"
+   },
+   "layout_country": {
+    "bl": "egypt",
+    "tl": "canada",
+    "br": "japan",
+    "tr": "germany"
+   },
+   "layout_voice": {
+    "bl": "man2",
+    "tl": "woman2",
+    "br": "woman1",
+    "tr": "man1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "japan",
+    "germany",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "woman1",
+    "man1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 3905,
+   "variant": "v44",
+   "record_type": "time_swap",
+   "output_name": "v44_n01_t1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v44_n01_t1.mp4",
+   "base_variant": "v44_n01_base.mp4",
+   "swap_info": "swap speech order 4 with speech order 1",
+   "video1": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "canada",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_canada_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "layout_animal": {
+    "bl": "tiger",
+    "br": "rabbit",
+    "tl": "monkey",
+    "tr": "panda"
+   },
+   "layout_country": {
+    "bl": "egypt",
+    "br": "canada",
+    "tl": "japan",
+    "tr": "germany"
+   },
+   "layout_voice": {
+    "bl": "man2",
+    "br": "woman2",
+    "tl": "woman1",
+    "tr": "man1"
+   },
+   "speech_order_animal": [
+    "rabbit",
+    "monkey",
+    "panda",
+    "tiger"
+   ],
+   "speech_order_country": [
+    "canada",
+    "japan",
+    "germany",
+    "egypt"
+   ],
+   "speech_order_voice": [
+    "woman2",
+    "woman1",
+    "man1",
+    "man2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 3908,
+   "variant": "v44",
+   "record_type": "animal_swap",
+   "output_name": "v44_n01_an1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v44_n01_an1.mp4",
+   "base_variant": "v44_n01_base.mp4",
+   "swap_info": "replace rabbit at position 4(br) with giraffe",
+   "video1": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video2": {
+    "animal": "giraffe",
+    "country": "canada",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/giraffe_canada_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/giraffe_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "layout_animal": {
+    "bl": "tiger",
+    "br": "giraffe",
+    "tl": "monkey",
+    "tr": "panda"
+   },
+   "layout_country": {
+    "bl": "egypt",
+    "br": "canada",
+    "tl": "japan",
+    "tr": "germany"
+   },
+   "layout_voice": {
+    "bl": "man2",
+    "br": "woman2",
+    "tl": "woman1",
+    "tr": "man1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "giraffe"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "japan",
+    "germany",
+    "canada"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "woman1",
+    "man1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  },
+  {
+   "combo_id": 3911,
+   "variant": "v44",
+   "record_type": "country_swap",
+   "output_name": "v44_n01_cn1.mp4",
+   "output_path": "synthetic_animal_dataset/cma_four/videos/v44_n01_cn1.mp4",
+   "base_variant": "v44_n01_base.mp4",
+   "swap_info": "replace canada at position 4(br) with russia",
+   "video1": {
+    "animal": "tiger",
+    "country": "egypt",
+    "voice": "man2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/tiger_egypt_man2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/tiger_back.png"
+   },
+   "video2": {
+    "animal": "rabbit",
+    "country": "russia",
+    "voice": "woman2",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/rabbit_russia_woman2.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/rabbit_back.png"
+   },
+   "video3": {
+    "animal": "monkey",
+    "country": "japan",
+    "voice": "woman1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/monkey_japan_woman1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/monkey_back.png"
+   },
+   "video4": {
+    "animal": "panda",
+    "country": "germany",
+    "voice": "man1",
+    "video": "synthetic_animal_dataset/basic_asset/animal/video/panda_germany_man1.mp4",
+    "sleep_image": "synthetic_animal_dataset/basic_asset/animal/image/panda_back.png"
+   },
+   "layout_animal": {
+    "bl": "tiger",
+    "br": "rabbit",
+    "tl": "monkey",
+    "tr": "panda"
+   },
+   "layout_country": {
+    "bl": "egypt",
+    "br": "russia",
+    "tl": "japan",
+    "tr": "germany"
+   },
+   "layout_voice": {
+    "bl": "man2",
+    "br": "woman2",
+    "tl": "woman1",
+    "tr": "man1"
+   },
+   "speech_order_animal": [
+    "tiger",
+    "monkey",
+    "panda",
+    "rabbit"
+   ],
+   "speech_order_country": [
+    "egypt",
+    "japan",
+    "germany",
+    "russia"
+   ],
+   "speech_order_voice": [
+    "man2",
+    "woman1",
+    "man1",
+    "woman2"
+   ],
+   "fps": 25.0,
+   "slot_size": {
+    "width": 784,
+    "height": 736
+   },
+   "output_size": {
+    "width": 1568,
+    "height": 1472
+   },
+   "gap_seconds": 0.0
+  }
+ ]
+}
