@@ -128,7 +128,7 @@ Results go to `exp_samples/` and `figures_samples/`. `scripts/check_primed_accur
 @inproceedings{
 jung2026who,
 title={Who Says What: Symbolic Trimodal Binding Mechanisms in Audio-Visual {LLM}s},
-author={Anonymous},
+author={Jihoo Jung and Youngjoon Jang and Joon Son Chung},
 booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
 year={2026},
 url={https://openreview.net/forum?id=M0fBuZdipl}
