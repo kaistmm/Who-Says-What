@@ -4,7 +4,9 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2609.31193-b31b1b.svg)](https://arxiv.org/abs/2609.31193)
 
-*Official implementation of* **"Who Says What: Symbolic Trimodal Binding Mechanisms in Audio-Visual LLMs"** *(NeurIPS 2026)*
+**Jihoo Jung**&nbsp;&nbsp;·&nbsp;&nbsp;**Youngjoon Jang**&nbsp;&nbsp;·&nbsp;&nbsp;**Joon Son Chung**
+
+*NeurIPS 2026*
 
 </div>
 
