@@ -133,6 +133,5 @@ title={Who Says What: Symbolic Trimodal Binding Mechanisms in Audio-Visual {LLM}
 author={Jihoo Jung and Youngjoon Jang and Joon Son Chung},
 booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
 year={2026},
-url={https://openreview.net/forum?id=M0fBuZdipl}
 }
 ```
