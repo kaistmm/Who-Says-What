@@ -2,7 +2,7 @@
 
 # Who Says What: Symbolic Trimodal Binding Mechanisms in Audio-Visual LLMs
 
-[![Paper](https://img.shields.io/badge/OpenReview-M0fBuZdipl-b31b1b.svg)](https://openreview.net/forum?id=M0fBuZdipl)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.31193-b31b1b.svg)](https://arxiv.org/abs/2609.31193)
 
 *Official implementation of* **"Who Says What: Symbolic Trimodal Binding Mechanisms in Audio-Visual LLMs"** *(NeurIPS 2026)*
 
