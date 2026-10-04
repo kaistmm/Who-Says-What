@@ -117,12 +117,6 @@ bash scripts/run_sample_demo.sh <GPU>        # RSA (10 samples) + CMA (3 samples
 
 Results go to `exp_samples/` and `figures_samples/`. `scripts/check_primed_accuracy.sh` reproduces the primed vs. unprimed accuracy check (App. A.1).
 
-## 📝 Notes
-
-- Runtime on one A6000: RSA ≈ 6 s/sample, CMA ≈ 95 s/sample (26 forward passes: original, manipulated and 24 patched windows); the 12 CMA configurations are best spread over several GPUs.
-- CM scores use single-token surface forms of the answer words; rows whose word has none (e.g. `giraffe` in the AAVR semantic set) get `null` and are excluded from the plots, as in the paper.
-- Rows with a missing video/wav are skipped with a warning instead of being run without audio.
-- `qwenvl/` is adapted from [video-SALMONN 2](https://github.com/bytedance/video-SALMONN-2) (Apache-2.0); `logic/nethook.py` from [ROME](https://github.com/kmeng01/rome) (MIT).
 
 ## 📖 Citation
 
